@@ -5,9 +5,14 @@ const Button = (props: {
     text: String,
     width?: number,
     height?: number,
+    activated?: true
 }) => {
+    let className = "Button"
+    if(props.activated === true) {
+        className += " Active"
+    }
     return (
-        <div className="Button" style={{
+        <div className={"Button"} style={{
             width: props.width || 100,
             height: props.height || 75,
         }}>
