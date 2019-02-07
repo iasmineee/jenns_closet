@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import logo from "./logo.svg";
-import "./App.css";
+import "./App.scss";
 import Button from "./Button";
+import SelectorDisplay from "./SelectorDisplay";
 
 class App extends Component {
   render() {
@@ -17,7 +18,9 @@ class App extends Component {
               activated={true}
             />
           </div>
-          <div className="Content-Center" />
+          <div className="Content-Center">
+            <SelectorDisplay />
+          </div>
           <div className="Content-Right">
             <Button text="DRESS ME" width={170} height={95} />
           </div>

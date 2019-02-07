@@ -1,5 +1,5 @@
 .Button {
-  background: grey;
+  background: #bbb;
   border: 4px solid black;
   display: flex;
   font-family: "Pixellari";
@@ -10,8 +10,8 @@
   }
 }
 .Button-Inner {
-  border-top: 8px solid #bbb;
-  border-left: 8px solid #bbb;
+  border-top: 8px solid #ddd;
+  border-left: 8px solid #ddd;
   border-bottom: 8px solid #999999;
   border-right: 8px solid #999999;
 
@@ -24,8 +24,8 @@
   .Active & {
     border-top: 8px solid #99f;
     border-left: 8px solid #99f;
-    border-bottom: 8px solid #999999;
-    border-right: 8px solid #999999;
+    border-bottom: 8px solid #55b;
+    border-right: 8px solid #55b;
   }
 }
 

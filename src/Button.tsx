@@ -6,23 +6,25 @@ const Button = (props: {
   width?: number;
   height?: number;
   activated?: boolean;
+  onClick?: () => void;
 }) => {
   let className = "Button";
   if (props.activated) {
     className += " Active";
   }
   return (
-    <div
+    <a
       className={className}
       style={{
-        width: props.width || 100,
-        height: props.height || 75
+        width: props.width,
+        height: props.height
       }}
+      onClick={props.onClick}
     >
       <div className="Button-Inner">
         <p className="Text">{props.text}</p>
       </div>
-    </div>
+    </a>
   );
 };
 
