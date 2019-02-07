@@ -1,0 +1,21 @@
+.Mismatch {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+
+  display: flex;
+  justify-content: center;
+
+  .Mismatch-Box {
+    width: 700px;
+    height: 120px;
+    background: #ddf;
+    box-shadow: 12px 12px 0px 3px black;
+    align-self: center;
+    text-align: center;
+    font-size: 100px;
+    align-content: center;
+  }
+}

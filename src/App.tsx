@@ -3,8 +3,16 @@ import logo from "./logo.svg";
 import "./App.scss";
 import Button from "./Button";
 import SelectorDisplay from "./SelectorDisplay";
+import Mismatch from "./Mismatch";
 
-class App extends Component {
+class App extends Component<any, any> {
+  constructor(props: any) {
+    super(props);
+    this.state = {
+      showMismatched: false
+    };
+  }
+
   render() {
     return (
       <div className="App">
@@ -22,10 +30,16 @@ class App extends Component {
             <SelectorDisplay />
           </div>
           <div className="Content-Right">
-            <Button text="DRESS ME" width={170} height={95} />
+            <Button
+              text="DRESS ME"
+              width={170}
+              height={95}
+              onClick={() => this.setState({ showMismatched: true })}
+            />
           </div>
         </div>
         <footer className="App-Footer" />
+        {this.state.showMismatched ? <Mismatch /> : null}
       </div>
     );
   }

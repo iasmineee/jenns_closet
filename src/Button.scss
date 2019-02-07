@@ -2,8 +2,8 @@
   background: #bbb;
   border: 4px solid black;
   display: flex;
-  font-family: "Pixellari";
-  font-size: 32px;
+  font-size: 35px;
+  line-height: 35px;
 
   &.Active {
     background: #77f;
@@ -32,7 +32,9 @@
 .Button-Inner .Text {
   padding: 5px;
   margin: 0;
-  margin-top: 10px;
   text-align: center;
-  text-shadow: #bbb -2px -2px;
+  text-shadow: #eee -2px -2px;
+  & .Active & {
+    text-shadow: #bbb -2px -2px;
+  }
 }
