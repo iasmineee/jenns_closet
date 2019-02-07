@@ -1,48 +1,49 @@
 body {
-    background-image: url("background.jpg");
-    height: 100vh;
-    font-family: 'Pixellari';
-    font-size: 30px;
-    line-height: 35px;
+  background-image: url("background.jpg");
+  height: 100vh;
+  font-family: "Pixellari";
+  font-size: 30px;
+  line-height: 35px;
 }
 
-#root, .App {
-    height: 100vh;
+#root,
+.App {
+  height: 100vh;
 }
 
 .App {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 header {
-    height: 30px;
-    background: black;
-    border-top: 4px solid grey;
-    border-bottom: 4px solid grey;
-    color: white;
+  height: 30px;
+  background: black;
+  border-top: 4px solid grey;
+  border-bottom: 4px solid grey;
+  color: white;
 }
 
 footer {
-    background: black;
-    border-top: 5px solid grey;
+  background: black;
+  border-top: 5px solid grey;
 }
 
 .Content {
-    flex-grow: 1;
+  flex-grow: 1;
 
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .Content-Left {
-    align-self: flex-end;
+  align-self: flex-end;
 }
 .Content-Center {
-    width: 300px;
-    background: white;
+  width: 300px;
+  background: white;
 }
 .Content-Right {
-    align-self: flex-end;
+  align-self: flex-end;
 }
