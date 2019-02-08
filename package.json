@@ -1,12 +1,14 @@
 {
   "name": "jenns_closet",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "homepage": "https://hcatlin.github.io/jenns_closet",
   "dependencies": {
     "@types/jest": "24.0.0",
     "@types/node": "10.12.21",
     "@types/react": "16.8.2",
     "@types/react-dom": "16.8.0",
+    "gh-pages": "^2.0.1",
     "md5-typescript": "^1.0.5",
     "node-sass": "^4.11.0",
     "react": "^16.8.1",
@@ -18,7 +20,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"

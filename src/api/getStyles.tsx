@@ -1,6 +1,8 @@
+import { shuffle } from "lodash";
+
 export function getStyles() {
   return {
-    tops: [
+    tops: shuffle([
       "RMB33",
       "GA33",
       "SMY22",
@@ -17,8 +19,8 @@ export function getStyles() {
       "UNW3",
       "TNT39",
       "NM344"
-    ],
-    bottoms: [
+    ]),
+    bottoms: shuffle([
       "RZ93",
       "DL193",
       "SBL27",
@@ -29,6 +31,6 @@ export function getStyles() {
       "PBO8",
       "PLL7",
       "DJ24"
-    ]
+    ])
   };
 }
